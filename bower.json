@@ -1,0 +1,27 @@
+{
+  "name": "baby-club",
+  "description": "Лендинг бэби-клуб",
+  "main": "gulpfile.js",
+  "authors": [
+    "Alexey Zavalin"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "src/bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.3.1",
+    "remodal": "^1.1.1",
+    "inputmask": "jquery.inputmask#^4.0.0",
+    "bootstrap": "^4.1.1",
+    "normalize-strings": "normalize#^1.1.0",
+    "normalize.css": "^8.0.0"
+  }
+}

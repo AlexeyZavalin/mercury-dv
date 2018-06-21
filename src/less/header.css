@@ -1,0 +1,46 @@
+header {
+  position: relative;
+}
+@media (min-width: 992px) {
+  header {
+    height: 735px;
+    background: url(../img/banner_bg.png) center center no-repeat;
+    background-size: cover;
+  }
+}
+header .logo {
+  margin-top: 30px;
+}
+header .phone {
+  font-size: 30px;
+  color: #fff;
+  font-family: 'Akzidenz-Grotesk Pro Light Cnd';
+  text-decoration: none;
+}
+.btn {
+  display: block;
+  padding: 16px;
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  border-radius: 3px;
+  font-size: 18px;
+  background: #9f69db;
+  font-family: 'Akzidenz-Grotesk Pro Light Cnd';
+  text-decoration: none;
+  transition: all .4s;
+}
+.btn:hover {
+  background: #8540d1;
+}
+.btn.btn__trsn {
+  background: transparent;
+  border: 1px solid #9f69db;
+}
+.btn.btn__trsn:hover {
+  background: #9f69db;
+}
+.btn.btn__iconed {
+  padding-left: 55px;
+  background: url(../img/download.png) 15px 15px no-repeat;
+}
