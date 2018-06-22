@@ -10,6 +10,8 @@ var gulp = require('gulp'),
     gulpif = require('gulp-if'),
     uglify = require('gulp-uglify'),
     clean = require('gulp-clean'),
+    concatCss = require('gulp-concat-css'),
+    sftp = require('gulp-sftp'),
     cleanCSS = require('gulp-clean-css');
 
 gulp.task('clean', function() {
@@ -18,7 +20,7 @@ gulp.task('clean', function() {
 });
 
 gulp.task('minify-css', () => {
-    return gulp.src('src/css/style.css')
+    return gulp.src('src/css/*.css')
         .pipe(cleanCSS({ compatibility: 'ie8' }))
         .pipe(gulp.dest('src/css/'));
 });
@@ -28,6 +30,11 @@ gulp.task('build', ['clean'], function() {
         .pipe(useref())
         .pipe(gulpif('js/*.js', uglify()))
         .pipe(gulp.dest('dist'));
+});
+
+gulp.task('img', function() {
+    return (gulp.src('src/img/*'))
+        .pipe(gulp.dest('dist/img'))
 });
 
 gulp.task('bower', function() {
@@ -61,14 +68,14 @@ gulp.task('less', function() {
 });
 
 gulp.task('css', function() {
-    return gulp.src('src/less/*.css')
+    return gulp.src('src/css/*.css')
         .pipe(connect.reload());
 });
 
 gulp.task('watch', function() {
     gulp.watch('src/less/*.less', ['less'])
+        // gulp.watch('src/css/*.css', ['minify-css'])
     gulp.watch('src/css/*.css', ['css'])
-    gulp.watch('src/css/style.css', ['minify-css'])
     gulp.watch('src/*.html', ['html'])
     gulp.watch('src/js/*.js', ['html'])
     gulp.watch('bower.json', ['bower'])

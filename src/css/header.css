@@ -17,6 +17,17 @@ header .phone {
   font-family: 'Akzidenz-Grotesk Pro Light Cnd';
   text-decoration: none;
 }
+.banner__content {
+  color: #fff;
+}
+@media (min-width: 992px) {
+  .banner__content {
+    height: 440px;
+  }
+  .banner__content .banner__title {
+    font-size: 60px;
+  }
+}
 .btn {
   display: block;
   padding: 16px;

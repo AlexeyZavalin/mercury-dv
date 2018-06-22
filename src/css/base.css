@@ -1,0 +1,37 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Akzidenz-Grotesk Pro';
+  font-size: 16px;
+  line-height: 1.6;
+}
+ul {
+  list-style: none;
+}
+section {
+  margin-bottom: 40px;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+.block__title {
+  font-size: 48px;
+  text-transform: uppercase;
+  line-height: 1.1;
+  font-weight: 300;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+.block__title:after {
+  content: '';
+  display: block;
+  position: absolute;
+  background: #d5d5d5;
+  height: 1px;
+  width: 50%;
+  top: 50%;
+  right: 0;
+}
