@@ -9,6 +9,8 @@
     <!--bower:css-->
     <link rel="stylesheet" href="bower_components/remodal/dist/remodal.css" />
     <link rel="stylesheet" href="bower_components/remodal/dist/remodal-default-theme.css" />
+    <link rel="stylesheet" href="bower_components/inputmask/css/inputmask.css" />
+    <link rel="stylesheet" href="bower_components/swiper/dist/css/swiper.css" />
     <!--endbower-->
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap-grid.min.css">
     <!-- endbuild -->
@@ -26,20 +28,20 @@
     <header>
         <div class="container">
             <div class="row align-items-center">
-                <div class="col-6">
+                <div class="col-md-6 col-xs-12">
                     <div class="logo">
                         <img src="img/logo.png" alt="">
                     </div>
                 </div>
-                <div class="col-6">
+                <div class="col-md-6 col-xs-12">
                     <div class="row align-items-center">
-                        <div class="col-4">
+                        <div class="col-md-4 col-xs-6">
                             <a href="#download" class="btn btn__iconed btn__trsn">Скачать прайс</a>
                         </div>
-                        <div class="col-4">
+                        <div class="col-md-4 col-xs-6">
                             <a href="#callme" class="btn">Обратный звонок</a>
                         </div>
-                        <div class="col-4">
+                        <div class="col-md-4 col-xs-12">
                             <a href="tel:+78006008090" class="phone">8 800 600 80 90</a>
                         </div>
                     </div>
@@ -47,12 +49,12 @@
             </div>
             <div class="banner__content">
                 <div class="banner__title">Комплексное снабжение<br/>предприятий</div>
-                <div class="banner__description">Комплексное снабжение предприятий кабелем, трансформаторными подстанциями и электротехнической оснасткой и инструментом</div>
+                <div class="banner__description">Комплексное снабжение предприятий кабелем, трансформаторными<br>подстанциями и электротехнической оснасткой и инструментом</div>
             </div>
         </div>
     </header>
     <main>
-        <div class="wide-container">
+        <div class="wide-container" id="particles-js">
             <section class="advantages">
                 <div class="advantages__item">
                     <div class="ai__img"><img src="img/advantage-1.png" alt=""></div>
@@ -67,7 +69,7 @@
                     <div class="ai__label">Более 10 000 товаров<br/>под заказ</div>
                 </div>
                 <div class="advantages__item">
-                    <div class="ai__img"><img src="img/" alt=""></div>
+                    <div class="ai__img"><img src="img/advantage-4.png" alt=""></div>
                     <div class="ai__label">Отсрочка платежа</div>
                 </div>
             </section>
@@ -84,69 +86,337 @@
                     </div>
                     <div class="col-md-4">
                         <div class="hc__item">
-                            <div class="hcs__img"><img src="img/" alt=""></div>
-                            <div class="hcs__title"></div>
+                            <div class="hcs__img"><img src="img/help-1.png" alt=""></div>
+                            <div class="hcs__title">Автоматы сетевые</div>
                         </div>
                     </div>
                     <div class="col-md-4">
                         <div class="hc__item">
-                            <div class="hcs__img"><img src="img/" alt=""></div>
-                            <div class="hcs__title"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-4">
-                        <div class="hc__item">
-                            <div class="hcs__img"><img src="img/" alt=""></div>
-                            <div class="hcs__title"></div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="hc__item">
-                            <div class="hcs__img"><img src="img/" alt=""></div>
-                            <div class="hcs__title"></div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="hc__item">
-                            <div class="hcs__img"><img src="img/" alt=""></div>
-                            <div class="hcs__title"></div>
+                            <div class="hcs__img"><img src="img/help-2.png" alt=""></div>
+                            <div class="hcs__title">Арматура ЛЭП, СИП, ВОЛС</div>
                         </div>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-md-4">
                         <div class="hc__item">
-                            <div class="hcs__img"><img src="img/" alt=""></div>
-                            <div class="hcs__title"></div>
+                            <div class="hcs__img"><img src="img/help-3.png" alt=""></div>
+                            <div class="hcs__title">Высоковольтное оборудование</div>
                         </div>
                     </div>
                     <div class="col-md-4">
                         <div class="hc__item">
-                            <div class="hcs__img"><img src="img/" alt=""></div>
-                            <div class="hcs__title"></div>
+                            <div class="hcs__img"><img src="img/hekp-4.png" alt=""></div>
+                            <div class="hcs__title">Изоляторы</div>
                         </div>
                     </div>
                     <div class="col-md-4">
                         <div class="hc__item">
-                            <div class="hcs__img"><img src="img/" alt=""></div>
-                            <div class="hcs__title"></div>
+                            <div class="hcs__img"><img src="img/help-5.png" alt=""></div>
+                            <div class="hcs__title">Инструменты</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="hc__item">
+                            <div class="hcs__img"><img src="img/help-6.png" alt=""></div>
+                            <div class="hcs__title">крановое оборудование</div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="hc__item">
+                            <div class="hcs__img"><img src="img/help-7.png" alt=""></div>
+                            <div class="hcs__title">Лампы</div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="hc__item">
+                            <div class="hcs__img"><img src="img/help-8.png" alt=""></div>
+                            <div class="hcs__title">Другое</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="special__offer">
+            <div class="container">
+                <div class="block__title">Специальное<br/>предложение</div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="sf__item">
+                            <div class="sfi__img"><img src="img/special-offer.png" alt=""></div>
+                            <div class="sfi__right-col">
+                                <div class="right-col__label">ППнг(А)-HF 5*10-1 ГОСТ</div>
+                                <div class="right-col__price"><span>64.69 </span><span>руб.</span><span>/ м.п.</span></div>
+                                <div class="right-col__button">
+                                    <a href="#order" class="btn btn-small">Заказать</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="sf__item">
+                            <div class="sfi__img"><img src="img/special-offer.png" alt=""></div>
+                            <div class="sfi__right-col">
+                                <div class="right-col__label">ППнг(А)-HF 5*10-1 ГОСТ</div>
+                                <div class="right-col__price"><span>64.69 </span><span>руб.</span><span>/ м.п.</span></div>
+                                <div class="right-col__button">
+                                    <a href="#order" class="btn btn-small">Заказать</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="sf__item">
+                            <div class="sfi__img"><img src="img/special-offer.png" alt=""></div>
+                            <div class="sfi__right-col">
+                                <div class="right-col__label">ППнг(А)-HF 5*10-1 ГОСТ</div>
+                                <div class="right-col__price"><span>64.69 </span><span>руб.</span><span>/ м.п.</span></div>
+                                <div class="right-col__button">
+                                    <a href="#order" class="btn btn-small">Заказать</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="sf__item">
+                            <div class="sfi__img"><img src="img/special-offer.png" alt=""></div>
+                            <div class="sfi__right-col">
+                                <div class="right-col__label">ППнг(А)-HF 5*10-1 ГОСТ</div>
+                                <div class="right-col__price"><span>64.69 </span><span>руб.</span><span>/ м.п.</span></div>
+                                <div class="right-col__button">
+                                    <a href="#order" class="btn btn-small">Заказать</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="sf__item">
+                            <div class="sfi__img"><img src="img/special-offer.png" alt=""></div>
+                            <div class="sfi__right-col">
+                                <div class="right-col__label">ППнг(А)-HF 5*10-1 ГОСТ</div>
+                                <div class="right-col__price"><span>64.69 </span><span>руб.</span><span>/ м.п.</span></div>
+                                <div class="right-col__button">
+                                    <a href="#order" class="btn btn-small">Заказать</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="sf__item">
+                            <div class="sfi__img"><img src="img/special-offer.png" alt=""></div>
+                            <div class="sfi__right-col">
+                                <div class="right-col__label">ППнг(А)-HF 5*10-1 ГОСТ</div>
+                                <div class="right-col__price"><span>64.69 </span><span>руб.</span><span>/ м.п.</span></div>
+                                <div class="right-col__button">
+                                    <a href="#order" class="btn btn-small">Заказать</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="get__special">
+            <div class="container">
+                <div class="block__title">Получить персональное<br/>предложение</div>
+                <div class="row">
+                    <div class="col-md-6 col-xs-12">
+                        <img src="img/spec__bg.png" alt="">
+                    </div>
+                    <div class="col-md-6 col-xs-12">
+                        <form id="personal">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-item"><input type="text" id="name" name="name"><label for="name">Имя</label></div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-item"><input type="text" id="phone" class="phonemask" name="phone"><label for="phone">Телефон</label></div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-item"><input type="email" id="email" name="email"><label for="email">Эл. Почта</label></div>
+                                </div>
+                                <div class="col-md-6">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-4 col-xs-9">
+                                    <div class="form-actions"><input type="submit" value="Получить"></div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="help__sphere">
+            <div class="container">
+                <div class="block__title">Мы поможем<br/>с выбором в сферах</div>
+                <div class="row">
+                    <div class="col-sm-6 col-xs-12 col-md-3">
+                        <div class="hs__item">
+                            <div class="hsi__img"><img src="img/sphere-1.png" alt=""></div>
+                            <div class="hsi__label">Строительные<br/>и подрядные организации</div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-xs-12 col-md-3">
+                        <div class="hs__item">
+                            <div class="hsi__img"><img src="img/sphere-2.png" alt=""></div>
+                            <div class="hsi__label">Промышленность</div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-xs-12 col-md-3">
+                        <div class="hs__item">
+                            <div class="hsi__img"><img src="img/sphere-3.png" alt=""></div>
+                            <div class="hsi__label">Автосервисы</div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-xs-12 col-md-3">
+                        <div class="hs__item">
+                            <div class="hsi__img"><img src="img/sphere-4.png" alt=""></div>
+                            <div class="hsi__label">Ж/Д строительство</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="partners">
+            <div class="wide-container">
+                <div class="container">
+                    <div class="block__title block__title_white">С нами уже работают</div>
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"><img src="img/partner-1.png" alt=""></div>
+                            <div class="swiper-slide"><img src="img/partner-2.png" alt=""></div>
+                            <div class="swiper-slide"><img src="img/partner-3.png" alt=""></div>
+                            <div class="swiper-slide"><img src="img/partner-4.png" alt=""></div>
+                            <div class="swiper-slide"><img src="img/partner-5.png" alt=""></div>
+                        </div>
+                        <div class="swiper-scrollbar"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="get__offer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col"></div>
+                    <div class="col-md-6 col-xs-12">
+                        <form id="get-offer">
+                            <div class="form__title">Получить<br>предложение</div>
+                            <div class="form-item"><input type="text" id="name-2" name="name"><label for="name-2">Имя</label></div>
+                            <div class="form-item"><input type="email" id="email-2" name="email"><label for="email-2">Эл. почта</label></div>
+                            <div class="form-item"><input type="text" class="phonemask" id="phone-2" name="phone"><label for="phone-2">Телефон</label></div>
+                            <div class="form-actions">
+                                <input type="submit" value="Получить">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="services dark nomargin">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 col-xs-12 col-md-3">
+                        <div class="s__item">
+                            <div class="si__img"><img src="img/service-1.png" alt=""></div>
+                            <div class="si__label">Помощь в выборе<br/>товара</div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-xs-12 col-md-3">
+                        <div class="s__item">
+                            <div class="si__img"><img src="img/service-2.png" alt=""></div>
+                            <div class="si__label">Полное документальное<br/>сопровождение</div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-xs-12 col-md-3">
+                        <div class="s__item">
+                            <div class="si__img"><img src="img/service-3.png" alt=""></div>
+                            <div class="si__label">Предоставляем сертификаты<br/>на продукцию</div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-xs-12 col-md-3">
+                        <div class="s__item">
+                            <div class="si__img"><img src="img/service-4.png" alt=""></div>
+                            <div class="si__label">Наличный<br/>и безналичный<br/>расчет</div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
     </main>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-7 col-xs-12">
+                    <div class="copyright">
+                        &copy; 2010 - 2018
+                    </div>
+                    <div class="info">
+                        Вся информация на сайте – собственность интернет-магазина.<br/> Публикация информации с сайта без разрешения запрещена. Все права защищены.<br/> Информация на сайте не является публичной офертой. Указанные цены действуют только
+                        при оформлении заказа через интернет-магазин.
+                    </div>
+                </div>
+                <div class="col-sm-5 col-xs-12">
+                    <div class="madeby text-right">
+                        <a rel="nofollow" target="_blank" href="https://pf27.ru/">Создание и продвижение
+                                    сайта</a><span class="madeby-nolink"> — Перфоманс </span>
+                        <span>
+                                                    <a rel="nofollow" target="_blank" href="https://pf27.ru/">
+                                                      <img
+                                                              alt="Создание и продвижение сайта в Хабаровске"
+                                                              title="Создание и продвижение сайта в Хабаровске"
+                                                              src="https://pf27.ru/copyrights/12/sozdanie-i-prodvizhenie-sajta-v-habarovske.png">
+                                                    </a>
+                                                </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="remodal" data-remodal-id="download">
+        <button data-remodal-action="close" class="remodal-close"></button>
+        <form id="download">
+            <div class="form-item"><input type="text" id="name-2" name="name"><label for="name-2">Имя</label></div>
+            <div class="form-item"><input type="text" id="phone-2" class="phonemask" name="phone"><label for="phone-2">Телефон</label></div>
+            <div class="form-actions"><input type="submit" value="Перезвоните мне"></div>
+        </form>
+    </div>
+    <div class="remodal" data-remodal-id="callme">
+        <button data-remodal-action="close" class="remodal-close"></button>
+        <form id="callme">
+            <div class="form-item"><input type="text" id="name-3" name="name"><label for="name-3">Имя</label></div>
+            <div class="form-item"><input type="text" id="phone-3" class="phonemask" name="phone" required="required"><label for="phone-3">Телефон</label></div>
+            <div class="form-actions"><input type="submit" value="Перезвоните мне"></div>
+        </form>
+    </div>
+    <div class="remodal" data-remodal-id="order">
+        <button data-remodal-action="close" class="remodal-close"></button>
+        <form id="order">
+            <div class="form-item"><input type="text" id="name-4" name="name"><label for="name-4">Имя</label></div>
+            <div class="form-item"><input type="text" id="phone-4" class="phonemask" name="phone"><label for="phone-4">Телефон</label></div>
+            <div class="form-actions"><input type="submit" value="Перезвоните мне"></div>
+        </form>
+    </div>
     <!-- build:js js/vendor.js -->
     <!--bower:js-->
     <script src="bower_components/jquery/dist/jquery.js"></script>
     <script src="bower_components/remodal/dist/remodal.js"></script>
     <script src="bower_components/inputmask/index.js"></script>
     <script src="bower_components/normalize-strings/normalize.js"></script>
+    <script src="bower_components/particles.js/particles.js"></script>
+    <script src="bower_components/swiper/dist/js/swiper.js"></script>
     <!--endbower-->
+    <script src="bower_components/inputmask/dist/min/jquery.inputmask.bundle.min.js"></script>
     <!-- endbuild -->
-    <!-- build:js js/common.js -->
+    <!-- build:js js/main.js -->
+    <script src="js/main.js"></script>
     <!-- endbuild -->
 </body>
 

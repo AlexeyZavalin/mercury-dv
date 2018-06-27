@@ -22,7 +22,10 @@ img {
 }
 
 .block__title {
-    font-size: 48px;
+    font-size: 28px;
+    @media (min-width: 992px) {
+        font-size: 48px;
+    }    
     text-transform: uppercase;
     line-height: 1.1;
     font-weight: 300;
@@ -39,4 +42,30 @@ img {
         top: 50%;
         right: 0;
     }
+    &.block__title_white {
+        color: #fff;
+        margin-bottom: 45px;
+        &:after {
+            display: none;
+        }
+    }
+}
+
+section {
+    margin-bottom: 70px;
+    &.dark {
+        background: #2d2a31;
+    }
+    &.nomargin {
+        margin-bottom: 0;
+    }
+}
+
+.text-right {
+    text-align: right;
+}
+
+.remodal-close {
+    left: auto;
+    right: 0;
 }

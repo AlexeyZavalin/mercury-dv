@@ -17,13 +17,18 @@ img {
   height: auto;
 }
 .block__title {
-  font-size: 48px;
+  font-size: 28px;
   text-transform: uppercase;
   line-height: 1.1;
   font-weight: 300;
   position: relative;
   overflow: hidden;
   margin-bottom: 30px;
+}
+@media (min-width: 992px) {
+  .block__title {
+    font-size: 48px;
+  }
 }
 .block__title:after {
   content: '';
@@ -33,5 +38,28 @@ img {
   height: 1px;
   width: 50%;
   top: 50%;
+  right: 0;
+}
+.block__title.block__title_white {
+  color: #fff;
+  margin-bottom: 45px;
+}
+.block__title.block__title_white:after {
+  display: none;
+}
+section {
+  margin-bottom: 70px;
+}
+section.dark {
+  background: #2d2a31;
+}
+section.nomargin {
+  margin-bottom: 0;
+}
+.text-right {
+  text-align: right;
+}
+.remodal-close {
+  left: auto;
   right: 0;
 }

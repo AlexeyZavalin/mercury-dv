@@ -1,11 +1,12 @@
 header {
   position: relative;
+  background: url(../img/banner_bg.png) center center no-repeat;
+  background-size: cover;
+  z-index: 2;
 }
 @media (min-width: 992px) {
   header {
     height: 735px;
-    background: url(../img/banner_bg.png) center center no-repeat;
-    background-size: cover;
   }
 }
 header .logo {
@@ -19,13 +20,44 @@ header .phone {
 }
 .banner__content {
   color: #fff;
+  height: 180px;
+}
+.banner__content .banner__title {
+  font-size: 20px;
+  text-transform: uppercase;
+  line-height: 1.1;
+  margin-bottom: 20px;
 }
 @media (min-width: 992px) {
   .banner__content {
     height: 440px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
   .banner__content .banner__title {
-    font-size: 60px;
+    padding-top: 40px;
+    padding-left: 110px;
+    font-size: 40px;
+    text-transform: uppercase;
+    line-height: 1.1;
+    position: relative;
+    margin-bottom: 20px;
+  }
+  .banner__content .banner__title:after {
+    content: '';
+    display: block;
+    width: 255px;
+    height: 255px;
+    border-radius: 4px;
+    background: #9f69db url(../img/banner-img.png) 0 185px no-repeat;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+  }
+  .banner__content .banner__description {
+    padding-left: 295px;
   }
 }
 .btn {
@@ -54,4 +86,8 @@ header .phone {
 .btn.btn__iconed {
   padding-left: 55px;
   background: url(../img/download.png) 15px 15px no-repeat;
+}
+.btn.btn-small {
+  padding: 7px 25px;
+  display: inline-block;
 }
